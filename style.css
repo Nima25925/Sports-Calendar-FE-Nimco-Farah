@@ -8,7 +8,7 @@
     /* red */
 }
 
-/* 🔹 Page background + text */
+/*  Page background + text */
 body {
     font-family: Comic Sans MS, sans-serif;
     background: linear-gradient(180deg, #071021, #071a2a);
@@ -17,7 +17,7 @@ body {
     text-align: center;
 }
 
-/* 🔹 Header bar */
+/*  Header bar */
 header {
     background: linear-gradient(90deg, #022139, #053b61);
     padding: 1rem;
@@ -46,7 +46,7 @@ header select:hover {
     transform: scale(1.05);
 }
 
-/* 🔹 Calendar grid */
+/*  Calendar grid */
 .calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -64,7 +64,7 @@ header select:hover {
     transition: .2s;
 }
 
-/* 🔹 Today = light blue background */
+/*  Today = light blue background */
 .day.today {
     background: var(--accent);
     /* fill light blue */
@@ -75,7 +75,7 @@ header select:hover {
     /* thin white border */
 }
 
-/* 🔹 Red dot if event */
+/*  Red dot if event */
 .day.event::after {
     content: "•";
     color: red;
@@ -93,7 +93,7 @@ header select:hover {
     transform: scale(1.1);
 }
 
-/* 🔹 Card box */
+/*  Card box */
 .card {
     background: var(--card);
     border-radius: 10px;
@@ -106,7 +106,7 @@ header select:hover {
     animation: fadeInUp .4s ease forwards;
 }
 
-/* 🔹 Match row */
+/*  Match row */
 .match {
     display: flex;
     justify-content: flex-start;
@@ -134,7 +134,7 @@ header select:hover {
     font-weight: bold;
 }
 
-/* 🔹 Input fields */
+/* Input fields */
 input {
     padding: .5rem;
     margin: .4rem;
@@ -148,7 +148,7 @@ input::placeholder {
     color: #bbb;
 }
 
-/* 🔹 Footer text */
+/* Footer text */
 footer {
     margin-top: 1rem;
     font-size: .8rem;
@@ -159,7 +159,7 @@ footer {
     color: red;
 }
 
-/* 🔹 Hide delete buttons (show only on hover) */
+/* Hide delete buttons (show only on hover) */
 .match button,
 table button {
     display: none;
@@ -169,7 +169,7 @@ table button {
 table tr:hover button {
     display: inline-block;
 }
-/* 🔹 Animations */
+/* Animations */
 @keyframes fadeInUp {
     to {
         opacity: 1;
@@ -194,7 +194,7 @@ table tr:hover button {
     }
 }
 
-/* 🔹 Responsive (tablet & mobile) */
+/* Responsive (tablet & mobile) */
 @media(max-width:600px) {
     header {
         flex-direction: column;
