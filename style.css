@@ -1,0 +1,171 @@
+:root {
+    /* colors */
+    --bg: #0f1724;
+    --card: #13213a;
+    --accent: #4cc9f0;
+    /* light blue */
+    --accent2: #ff0000;
+    /* red */
+}
+
+/* 🔹 Page background + text */
+body {
+    font-family: Comic Sans MS, sans-serif;
+    background: linear-gradient(180deg, #071021, #071a2a);
+    color: #e6eef8;
+    margin: 0;
+    text-align: center;
+}
+
+/* 🔹 Header bar */
+header {
+    background: linear-gradient(90deg, #022139, #053b61);
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+}
+
+header button,
+header select {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: .3rem .6rem;
+    transition: .2s;
+}
+
+header button:hover,
+header select:hover {
+    color: var(--accent2);
+    transform: scale(1.05);
+}
+
+/* 🔹 Calendar grid */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    margin: 1rem auto;
+    max-width: 600px;
+}
+
+.day {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+}
+
+/* 🔹 Today = light blue background */
+.day.today {
+    background: var(--accent);
+    /* fill light blue */
+    color: black;
+    /* text black for contrast */
+    font-weight: bold;
+    border: 2px solid white;
+    /* thin white border */
+}
+
+/* 🔹 Red dot if event */
+.day.event::after {
+    content: "•";
+    color: red;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: pulse 1.5s infinite;
+}
+
+/* hover effect */
+.day:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.1);
+}
+
+/* 🔹 Card box */
+.card {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .4);
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp .4s ease forwards;
+}
+
+/* 🔹 Match row */
+.match {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: .5rem;
+    margin: .3rem 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    text-align: left;
+    transition: .3s;
+}
+
+.match:hover {
+    background: rgba(255, 255, 255, .1);
+    transform: translateX(5px);
+}
+
+.match .date {
+    min-width: 100px;
+    font-weight: bold;
+}
+
+.sport {
+    color: red;
+    font-weight: bold;
+}
+
+/* 🔹 Input fields */
+input {
+    padding: .5rem;
+    margin: .4rem;
+    border-radius: 6px;
+    border: none;
+    width: 80%;
+    text-align: center;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+/* 🔹 Footer text */
+footer {
+    margin-top: 1rem;
+    font-size: .8rem;
+    color: #aaa;
+}
+
+.red-o {
+    color: red;
+}
+
+/* 🔹 Hide delete buttons (show only on hover) */
+.match button,
+table button {
+    display: none;
+}
+
+.match:hover button,
+table tr:hover button {
+    display: inline-block;
+}
