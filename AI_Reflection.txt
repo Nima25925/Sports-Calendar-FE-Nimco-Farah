@@ -1,0 +1,12 @@
+During this project, I used AI tools like ChatGPT to help me learn and solve small coding problems.
+For example, I asked how to save JSON data on a website after a reload, and the AI showed me how to use localStorage in JavaScript.
+That helped me understand how to keep data after refreshing the page.
+
+Sometimes, I also asked for design ideas like colors, layout tips, and animations in CSS.
+For example, I didn't know the exact CSS color for navy blue,
+so I asked ChatGPT for help and learned how to use the right color in my design.
+
+The AI gave me suggestions, but I always tested everything myself and make changes to make the code fit my own project.
+
+AI helped me learn faster and understand new concepts, but I always wrote and tested the final code myself.
+This way, I learned not just to copy, but to understand how everything works.
