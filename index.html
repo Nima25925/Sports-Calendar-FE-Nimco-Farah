@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🏆 Sports Event Calendar</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Header with title, buttons and filter -->
+    <header>
+        <h1>🏆 Sp<span class="red-o">o</span>rts Event</h1>
+        <nav>
+            <button onclick="showCalendar()">Calendar</button>
+            <button onclick="showAddForm()">Add new Event</button>
+            <!-- Filter dropdown -->
+            <select id="filter" onchange="showCalendar()">
+                <option value="">All Sports</option>
+                <option value="Football">Football</option>
+                <option value="Ice Hockey">Ice Hockey</option>
+            </select>
+        </nav>
+    </header>
+
+    <!-- Main container -->
+    <main id="main"></main>
+
+    <footer>
+        <p>⚽ Sports Events – 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
